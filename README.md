@@ -13,7 +13,10 @@ class CustomPaginator(NumberPaginatorResponse):
   serializer_class = YourSerializerHere
  
 
-CustomPaginator(data, page_size, page, serializer_params = {"many": True, context={"user_id": user.id}}).paginated_response()
+CustomPaginator(
+      data, page_size, page,
+      serializer_params = {"many": True, context={"user_id": user.id}}
+      ).paginated_response()
 
 
 # In this case: CustomPaginator(
