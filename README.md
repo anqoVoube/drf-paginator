@@ -16,7 +16,11 @@ class CustomPaginator(NumberPaginatorResponse):
 CustomPaginator(data, page_size, page, serializer_params = {"many": True, context={"user_id": user.id}}).paginated_response()
 
 
-# In this case: CustomPaginator(QuerySet, 3, 1, serializer_params = data(many=True, context={"user_id": user.id})).paginated_response()
+# In this case: CustomPaginator(
+#                   QuerySet, 3, 1, serializer_params = data(
+#                           many=True, context={"user_id": user.id}
+#                           )
+#                   ).paginated_response()
 # {
 #    "count": 5,
 #    "previous": None,
