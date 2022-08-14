@@ -31,5 +31,7 @@ CustomPaginator(data, page_size, page, serializer_params = {"many": True, contex
 #                 {"model": 7},
 #              ]
 # }
-# Where count - overall length of objects, previous and next pages number (if one of them doesn't exist then it will return None) and result itself.
+# Where count - overall length of objects, 
+# previous and next pages number 
+# (if one of them doesn't exist then it will return None) and result itself.
 ```
