@@ -6,7 +6,7 @@ Paginate your Model QuerySet by simply passing it to the your custom paginator c
 ```python3
 user = User.objects.first()
 data = Model.objects.all()
-page_size = 10
+page_size = 3
 page = 1
 
 class CustomPaginator(NumberPaginatorResponse):
